@@ -1,0 +1,133 @@
+header{
+    display: flex;
+    background-color: #CDC1D9;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 0;
+}
+#headerMain{
+    display: flex;
+    justify-content: space-between;
+}
+#homeButton{
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    align-self: center;
+    margin-left: 10px;
+}
+#logo{
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    padding-top:20px;
+    align-self: center;
+}
+#breadcrumb{
+    align-self: flex-start;
+}
+.breadCLink{
+    text-decoration: none;
+    color: #8B63A6;
+    font-size: smaller;
+    margin-left: 10px;
+}
+#profilAcces{
+    align-self:center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+#avatar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: black solid 1px;
+    align-self: center;
+}
+#disconnect{
+    color: #8B63A6;
+    font-size: smaller;
+}
+a:hover{
+    color:#513973
+}
+body{
+    background-color:#8B63A6;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.intro{
+    border: black solid 1px;
+    border-radius: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    background-color: #69439F;
+    color: #CDC1D9;
+}
+#buttonQuiz{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background-color: #513973;
+    color: #CDC1D9;
+    box-shadow: 2px 2px 5px black;
+    text-decoration: none;
+}
+section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+article:nth-child(2n+1){
+    background-color: #513973;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    color: #CDC1D9;
+}
+article:nth-child(even){
+    background-color: #69439F;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    color: #CDC1D9;
+}
+
+.interaction:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #CDC1D9;
+}
+.footerImg{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#footerLinks{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+#footerLinks a{
+    font-size: small;
+    text-decoration: none;
+    color: #513973;
+}

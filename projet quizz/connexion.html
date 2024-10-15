@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./connexion.css">
+    <title>Connexion</title>
+</head>
+<body>
+    <header>
+        <img src="./design/logo.png" alt="img" id="logo">
+        <nav id="breadcrumb">
+            <a href="./index.html" class="breadCLink">Acceuil /</a>
+            <a href="./connexion.html" class="breadCLink">Connexion</a>
+        </nav>
+    </header>
+    <main>
+        <form id="connexion">
+            <h3>Connexion</h3>
+            <label for="username">Email</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" required>
+            <button type="submit" id="bouton1">Connexion</button>
+        </form>
+    
+        <form action="" id="formulaire" method="">
+            <h3>Inscription</h3>
+            <label for="firstname">Votre prénom</label>
+            <input type="text" name="firstname" id="firstname">
+            <label for="lastname">Votre nom</label>
+            <input type="text" name="lastname" id="lastname">
+            <label for="email">Votre email</label>
+            <input type="email" name="email" id="email">
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password">
+            <button type="submit" id="bouton2">Créer un compte</button>
+          </form>
+    </main>
+
+    <script src="./connexion.js"></script>
+</body>
+</html>
