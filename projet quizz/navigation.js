@@ -12,3 +12,13 @@ let linkedin = document.getElementById("linkedin");
 linkedin.addEventListener('click',()=>{
     window.open("https://www.linkedin.com/company/adrar-formation");
 });
+
+let home = document.getElementById("home");
+home.addEventListener('click',()=>{
+    window.location.href="./index.html";
+});
+
+let profil = document.getElementById("profil");
+profil.addEventListener('click',()=>{
+    window.location.href="./profil.html";
+});
