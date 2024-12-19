@@ -1,0 +1,38 @@
+header{
+    div:first-of-type{
+        justify-content: space-between;
+        
+        img:first-of-type{
+            height: 50px;
+            width: 50px;
+            border-radius: 15px;
+            align-self: center;
+            margin-left: 10px;
+        }
+        img:nth-of-type(2){
+            height: 100px;
+            width: 100px;
+            align-self: center;
+            padding-top:20px;
+            align-self: center;
+        }
+        div:first-of-type{
+            align-self:center;
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+            
+            img{
+                height: 50px;
+                width: 50px;
+                border-radius: 50px;
+                border: black solid 1px;
+                align-self: center;
+            }
+            a{
+                color: #8B63A6;
+                font-size: smaller;
+            }
+        }
+    }
+}
