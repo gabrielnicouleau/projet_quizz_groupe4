@@ -1,8 +1,8 @@
 <?php
-include './utils/functions.php';
-include './Model/ModelUser.php';
-include './manager/manager_user.php';
-include './view/view_accueil.php';
+include '../Utils/functions.php';
+include '../Model/ModelUser.php';
+include '../manager/manager_user.php';
+include '../view/view_accueil.php';
 class ControllerAccueil{
     private ?ViewAccueil $accueil;
 

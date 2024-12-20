@@ -1,0 +1,75 @@
+@import url('commun.css');
+@import url('commun2.css');
+/* elements main */
+main{
+    margin: 6%;
+}
+section{
+    border: black solid 1px;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 3%;
+    background-color: #69439F;
+    
+    article {
+        display: flex;
+        flex-direction: column;
+        
+        img{
+            height: 200px;
+            width: 200px;
+            border: 3px black solid;
+            border-radius: 200px;
+            align-self: center;
+            grid-column: 1;
+        }
+        
+        article {
+
+            div{
+                
+                h3{
+                    justify-self: center;
+                    border: black solid 1px;
+                    border-radius: 10px;
+                    box-shadow: 2px 2px 5px black;
+                    padding: 10px;
+                    color: #CDC1D9;
+                    background-color: #513973;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    #results{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10%;
+        color: #CDC1D9;
+        div{
+            display: flex;
+            flex-direction: column;
+            h3{
+                text-decoration: underline;
+                align-self: center;
+            }
+            h2{
+                align-self: center;
+            }
+        }
+    }
+}
+@media (max-width: 600px){
+    main section {
+        margin-left: 5%;
+        margin-right: 5%;
+        article img {
+            height: 100px;
+            width: 100px;
+        }
+    }
+    main section article article div, #results div h3, #results div h2{
+        transform: scale(0.6);
+    }
+}

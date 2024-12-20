@@ -26,14 +26,14 @@ class ViewIndex{
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="./src/styles/connexion.css">
+        <link rel="stylesheet" href="./App/src/styles/connexion.css">
         <title>Connexion</title>
     </head>
     <body>
         
         <header class="sticky-top">
             <div>
-                <img src="./src/images/logo.png" alt="image">
+                <img src="./App/src/images/logo.png" alt="image">
             </div>
             <nav>
                 <a href="./index.php">Connexion</a>
@@ -61,15 +61,15 @@ class ViewIndex{
                 <input type="password" name="passwordVerify" id="passwordinscription">
                 <button type="submit" id="bouton2" name ="submitInscription" class="interaction">Créer un compte</button>
             </form>
+            <p><?php echo $this->getMessage() ?></p>
         </main>
-        <p><?php echo $this->getMessage() ?></p>
 
         <footer>
             <div>
-                <img src="./src/images/linkedin (1).png" alt="image" class="footerImg interaction" id="linkedin">
-            <img src="./src/images/facebook.png" alt="image" class="footerImg interaction" id="facebook">
+                <img src="./App/src/images/linkedin (1).png" alt="image" class="footerImg interaction" id="linkedin">
+            <img src="./App/src/images/facebook.png" alt="image" class="footerImg interaction" id="facebook">
         </div>
-        <img src="./src/images/adrar.png" alt="image" class="footerImg interaction" id="adrar">
+        <img src="./App/src/images/adrar.png" alt="image" class="footerImg interaction" id="adrar">
             <div>
                 <a href="#" class="interaction">à propos</a>
                 <a href="#" class="interaction">plan du site</a>

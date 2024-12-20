@@ -1,9 +1,0 @@
-CREATE DATABASE IF NOT EXISTS quizz CHARSET utf8mb4;
-USE quizz;
-
-CREATE TABLE IF NOT EXISTS utilisateur(
-id_utilisateur INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-pseudo_utilisateur VARCHAR(50) NOT NULL,
-email_utilisateur VARCHAR(150) NOT NULL UNIQUE
-mdp_utilisateur VARCHAR(100) NOT NULL,
-)Engine=InnoDB;

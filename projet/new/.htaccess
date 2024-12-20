@@ -1,0 +1,16 @@
+# Activation du rewrite des URL
+RewriteEngine On
+# base du projet (emplacement à partir de la racine du serveur)
+RewriteBase /tpapi
+# si ce n'est pas un répertoire
+RewriteCond %{REQUEST_FILENAME} !-d
+# Si ce n'est pas un fichier
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^api/(.*)$ api.php?$1 [QSA,L]
+# Régles de sécurité : filtrage des fichiers sensibles
+<Files ~ "(.txt|.md|.log|.pem|.sql|.htacess|.json|.lock)$">
+   Require all denied
+</Files>
+# réglage de la variable d'environnement HTTP_AUTHORIZATION
+RewriteCond %{HTTP:Authorization} ^(.+)$
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]

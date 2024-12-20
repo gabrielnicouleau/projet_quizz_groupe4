@@ -41,17 +41,17 @@ class ViewProfil{
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-            <link rel="stylesheet" href="./src/styles/profil.css">
+            <link rel="stylesheet" href="../src/styles/profil.css">
             <title>Acceuil</title>
         </head>
         <body>
             <header class="sticky-top">
                 <div>
-                    <img src="./src/images/home.PNG" alt="image" class="interaction" id="home">
-                    <img src="./src/images/logo.png" alt="image">
+                    <img src="../src/images/home.PNG" alt="image" class="interaction" id="home">
+                    <img src="../src/images/logo.png" alt="image">
                     <div id="profilAcces">
-                        <img src="./src/images/phoque.jpg" alt="img" class="interaction" id="profil">
-                        <a href="deconnexion.php" class="interaction">Se déconnecter</a>
+                        <img src="../src/images/phoque.jpg" alt="img" class="interaction" id="profil">
+                        <a href="./deconnexion.php" class="interaction">Se déconnecter</a>
                     </div>
                 </div>
                 <nav>
@@ -61,7 +61,7 @@ class ViewProfil{
             <main>
                 <section>
                     <article>
-                        <img src="./src/images/phoque.jpg" alt="img">
+                        <img src="../src/images/phoque.jpg" alt="img">
                         <article>
                             <div>
                                 <h4><?php echo $this->getPseudo()?></h4>
@@ -86,10 +86,10 @@ class ViewProfil{
 
             <footer>
                 <div>
-                    <img src="./src/images/linkedin (1).png" alt="image" class="footerImg interaction" id="linkedin">
-                    <img src="./src/images/facebook.png" alt="image" class="footerImg interaction" id="facebook">
+                    <img src="../src/images/linkedin (1).png" alt="image" class="footerImg interaction" id="linkedin">
+                    <img src="../src/images/facebook.png" alt="image" class="footerImg interaction" id="facebook">
                 </div>
-                <img src="./src/images/adrar.png" alt="image" class="footerImg interaction" id="adrar">
+                <img src="../src/images/adrar.png" alt="image" class="footerImg interaction" id="adrar">
                 <div>
                 <a href="#" class="interaction">à propos</a>
                 <a href="#" class="interaction">plan du site</a>

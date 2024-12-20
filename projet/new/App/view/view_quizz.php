@@ -1,22 +1,7 @@
 <?php 
 session_start();
-class ViewAccueil{
-    private ?string $message;
-
-    public function __construct(){
-        $this->message = "";
-    }
-
-    public function getMessage(): string|null{
-        return $this->message;
-    }
-    public function setMessage(?string $newmessage): ViewAccueil{
-        $this->message = $newmessage;
-        return $this;
-    }
-
-    public function render(): string{
-
+class ViewQuizz{
+    public function render(){
         ob_start();
 ?>
         <!DOCTYPE html>
@@ -26,57 +11,37 @@ class ViewAccueil{
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-            <link rel="stylesheet" href="./src/styles/style.css">
-            <title>Accueil</title>
+            <link rel="stylesheet" href="../src/styles/quizz.css">
+            <title>Acceuil</title>
         </head>
         <body>
             <header class="sticky-top">
                 <div>
-                    <img src="./src/images/home.PNG" alt="image" class="interaction" id="home">
-                    <img src="./src/images/logo.png" alt="image">
+                    <img src="../src/images/home.PNG" alt="image" class="interaction" id="home">
+                    <img src="../src/images/logo.png" alt="image">
                     <div id="profilAcces">
-                        <img src="./src/images/phoque.jpg" alt="img" class="interaction" id="profil">
-                        <a href="./deconnexion.php" class="interaction">Se déconnecter</a>
+                        <img src="../src/images/phoque.jpg" alt="img" class="interaction" id="profil">
+                        <a href="deconnexion.php" class="interaction">Se déconnecter</a>
                     </div>
                 </div>
                 <nav>
-                    <a href="./accueil.php">Acceuil</a>
+                    <a href="./accueil.php">Acceuil /</a><a href="./quizz.php">Quizz</a>
                 </nav>
             </header>
             <main>
-                <div>
-                    <p>Ce site de quiz est à portée éducative et appartient au pôle numerique de l’Adrar. Venez tester et évaluer vos connaissances sur les différents modules d’apprentissage disponibles en formation. Bon courage et amusez vous bien.</p>
+                <h1>Quiz Multijoueur</h1>
+                <div id="quiz-container">
+                    <div id="questions"></div>
+                    <div id="scores">Score: 0</div>
+                    <div id="time"></div>
                 </div>
-                <a href="#" class="interaction">Accéder au quiz</a>
-                <section>
-                <article>
-                    <h3>Nouveaux thèmes</h3>
-                    <ul>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Nouveaux quiz</h3>
-                    <ul>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Thèmes populaires</h3>
-                    <ul>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Quiz populaires</h3>
-                    <ul>
-                    </ul>
-                </article>
-                </section>
             </main>
             <footer>
                 <div>
-                <img src="./src/images/linkedin (1).png" alt="image" class="footerImg interaction" id="linkedin">
-                <img src="./src/images/facebook.png" alt="image" class="footerImg interaction" id="facebook">
+                <img src="../src/images/linkedin (1).png" alt="image" class="footerImg interaction" id="linkedin">
+                <img src="../src/images/facebook.png" alt="image" class="footerImg interaction" id="facebook">
                 </div>
-                <img src="./src/images/adrar.png" alt="image" class="footerImg interaction" id="adrar">
+                <img src="../src/images/adrar.png" alt="image" class="footerImg interaction" id="adrar">
                 <div>
                 <a href="#" class="interaction">à propos</a>
                 <a href="#" class="interaction">plan du site</a>
@@ -106,7 +71,7 @@ class ViewAccueil{
                 window.location.href = "./profil.php";
             });
         </script>
-
+        <script src="../src/script/quiz.js"></script>
         </body>
         </html>
 <?php

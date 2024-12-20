@@ -1,8 +1,8 @@
 <?php
-include './utils/functions.php';
-include './Model/ModelUser.php';
-include './manager/manager_user.php';
-include './view/view_profil.php';
+include '../utils/functions.php';
+include '../Model/ModelUser.php';
+include '../manager/manager_user.php';
+include '../view/view_profil.php';
 class ControllerProfil{
     private ?ViewProfil $profil;
 

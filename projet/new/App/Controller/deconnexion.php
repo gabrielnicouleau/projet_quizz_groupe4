@@ -6,7 +6,7 @@ session_start();
 session_destroy();
 
 //je redirige vers l'accueil
-header('Location:index.php');
+header('Location:../../index.php');
 exit;
 
 ?>

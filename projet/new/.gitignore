@@ -1,0 +1,8 @@
+env.local.php
+env.*.php
+composer.lock
+composer.phar
+/vendor/
+/api/
+/Public/media/
+*.pem

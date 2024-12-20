@@ -1,8 +1,13 @@
 <?php
-include './utils/functions.php';
-include './Model/ModelUser.php';
-include './manager/manager_user.php';
-include './view/view_connexion.php';
+include './App/utils/functions.php';
+include './App/Model/ModelUser.php';
+include './App/manager/manager_user.php';
+include './App/view/view_connexion.php';
+//chargement des variables d'environnement
+require_once './env.local.php';
+
+//chargement de l'autoloader de composer
+require_once './vendor/autoload.php';
 
 class ControllerConnexion{
     private ?ModelUser $modelUser;
@@ -49,7 +54,7 @@ class ControllerConnexion{
                             $_SESSION['pseudo'] = $data[0]['pseudo_utilisateur'];
                             $_SESSION['email'] = $data[0]['email_utilisateur'];
                             
-                            header('Location:profil.php');
+                            header('Location:./App/Controller/profil.php');
                             exit;
                         }else{
                             $this->getIndex()->setMessage("Email et/ou mot de passe incorrect !");
@@ -103,7 +108,7 @@ class ControllerConnexion{
 
     public function renderViews():void{
         if(isset($_SESSION['id']) && !empty($_SESSION['id'])){
-            header('Location:accueil.php');
+            header('Location:./App/Controller/accueil.php');
             exit;
         }
         $this->logInUser();

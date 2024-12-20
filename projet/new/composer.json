@@ -1,0 +1,13 @@
+{
+    "name": "mithridatem/tpapi",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "require": {
+        "symfony/var-dumper": "^7.2",
+        "firebase/php-jwt": "^6.10"
+    }
+}

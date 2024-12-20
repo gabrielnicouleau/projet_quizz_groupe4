@@ -57,3 +57,30 @@ section{
         color: #CDC1D9;
     }
 }
+
+@media (max-width: 600px){
+    main div:first-of-type p{
+            margin-left: 5%;
+            margin-right: 5%;
+    }
+    section{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+}
+@media (max-width: 500px){
+    main section article h3 {
+        transform: scale(0.75);
+        text-align: center;
+    }
+}
+@media (max-width: 400px){
+    main{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    main section article h3 {
+        transform: scale(0.5);
+    }
+}
